@@ -31,8 +31,6 @@ class Courses (db.Model):
     country = db.Column(db.String,nullable = False)
     date = db.Column(db.DateTime,nullable = False)
 
-
-
     def __init__(self,title,country,date):
         self.title = title
         self.country = country

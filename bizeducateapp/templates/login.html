@@ -2,25 +2,33 @@
 
 {% block content %}
 <br/>
-<div class="container">
-<h3>Enter your login details:</h3><br>
-
+<br>
 <br>
 
-<form method="POST">
-  {{form.hidden_tag()}}
-  <div class="mb-3">
-    {{form.username.label(class = "form-label")}}
-    {{form.username(class="form-control")}}
+<div class="container">
+  <div class="row">
+    <div class="row justify-content-center">
+      <h3 class="row justify-content-center">Enter your login details:</h3><br>
+      <br>
+      <br>
+
+      <form method="POST" style="width: 300px; mx-auto;">
+        {{form.hidden_tag()}}
+        <div class="mb-3" >
+          {{form.username.label(class = "form-label")}}
+          {{form.username(class="form-control")}}
+        </div>
+        <div class="mb-3">
+          {{form.password.label(class = "form-label")}}
+          {{form.password(class = "form-control")}}
+        </div>
+        <div class="mb-3">
+          {{form.submit(class="btn btn-primary")}}
+        </div>
+      </form>
+    </div>
   </div>
-  <div class="mb-3">
-    {{form.password.label(class = "form-label")}}
-    {{form.password(class = "form-control")}}
-  </div>
-  <div class="mb-3">
-    {{form.submit(class="btn btn-primary")}}
-  </div>
-</form>
+
 </div>
 
 
