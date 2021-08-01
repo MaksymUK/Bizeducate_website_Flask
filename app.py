@@ -1,8 +1,9 @@
-from bizeducateapp import app
+from bizeducateapp import app,mail
 from flask import render_template,flash,redirect,url_for,session,request
 from bizeducateapp.models import Users
 from flask_login import login_user,current_user,logout_user,login_required
-from bizeducateapp.forms import LoginForm
+from bizeducateapp.forms import LoginForm,ContactUsForm
+from flask_mail import Message, Mail
 
 @app.route('/')
 @app.route('/home')
@@ -29,6 +30,19 @@ def logout():
 def single_course():
     return render_template('course.html')
 
+@app.route('/contact_us', methods = ['GET','POST'])
+def contact_us():
+    form = ContactUsForm()
+    if form.validate_on_submit():
+        name = request.form.get('name')
+        email = request.form.get('email')
+        text = request.form.get('text')
+        flash("Your request has been sent")
+        msg = Message('Request from bizeducate website', sender='marketalliance18@gmail.com', recipients=['office@bizeducate.com'])
+        msg.body = f"Email: {email},\n Name: {name},\n Request text:\n {text}"
+        mail.send(msg)
+        return redirect(url_for('contact_us'))
+    return render_template('contact_us.html', form = form)
 
 
 
