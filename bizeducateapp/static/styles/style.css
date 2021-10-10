@@ -1,3 +1,4 @@
+/*---------Clearing out all styles-------*/
 * {
   padding: 0;
   margin: 0;
@@ -70,9 +71,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
-/*main styles */
+/*--------------------------- NAV BAR ------------------------*/
 
 .wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .container {
   max-width: 1180px;
@@ -115,9 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__burger {
   display: none;
 }
-.header__menu {
 
-}
 .header__list {
   display: flex;
   position: relative;
@@ -207,9 +210,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
+/*--------------------CONTENT GENERAL-----------------------*/
 .content {
-  padding: 100px 0 0 0;
+  flex: 1 1 auto;
+
 }
 .content__text {
   font-size: 16px;
@@ -222,4 +226,60 @@ h1, h2, h3, h4, h5, h6 {
   .content {
     padding: 70px 0 0 0;
   }
+}
+/*-----------------------HEAD SCREEN-----------------------*/
+
+.main-screen {
+  max-width: 100%;
+  height: 1000px;
+  padding: 250px 0;
+  background-image: url('/bizeducateapp/static/training.jpg');
+  background-position: 0 -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+}
+.main-screen__row {
+  display: flex;
+  flex-direction: column;
+
+}
+.main-screen__body {
+  background-color: grey;
+  opacity: 70%;
+  padding: 60px;
+  text-align: center;
+  z-index: 3;
+
+}
+.main-screen__title {
+  font-size: 40px;
+  color: ghostwhite;
+  margin: 0 0 30px 0;
+  z-index: 6;
+
+}
+.main-screen__subtitle {
+  font-size: 30px;
+  color: ghostwhite;
+}
+
+
+
+/*---------------FOOTER------------------*/
+
+.footer {
+  background-color: #444A9E;
+
+}
+.footer__container {}
+.footer__row {
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  color: whitesmoke;
 }
