@@ -27,7 +27,7 @@ html, body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
+  font-size: 16px;
   font-family: Arial;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 /*---------------FOOTER------------------*/
 
 .footer {
-  background-color: #444A9E;
+  background-color: #445161;
 
 }
 .footer__container {}
@@ -373,12 +373,12 @@ h1, h2, h3, h4, h5, h6 {
 .item-upcomming-events__buttom {
   
   margin: 0 60px;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   vertical-align: middle;
   border: 2px solid red;
-  font-size: 16px;
+  font-size: 18px;
 }
 .item-upcomming-events__buttom:hover {
   background-color: red;
@@ -386,4 +386,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 .item-upcomming-events__buttom a {
   color: black;
+}
+
+/*-------------------WELCOME-------------------------*/
+
+.welcome {
+  align-items: center;
+}
+.welcome__title {
+  padding: 40px 0 20px 0;
+}
+.welcome__row {
+  margin:40px 0 30px 0;
+  display: flex;
+  justify-content: center;
+
+}
+.welcome__text-body {
+  flex: 0 1 600px;
+  padding: 0 -15px 0 0;
+}
+.welcome__text {
+  font-size: 20px;
+  line-height: 26px;
+}
+.welcome__signature {
+  margin: 20px 0 0 0;
+  padding: 0 0 0 20px;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 24px;
+  border-left: 3px solid red;
+}
+.welcome__image {
+  flex: 0 0 300px;
+  margin: 0 0 0 15px;
+}
+.welcome__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
