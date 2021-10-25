@@ -286,17 +286,43 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   background-color: #445161;
+  height: 300px;
+  color: whitesmoke;
+  font-size: 15px;
+  line-height: 20px;
+}
+.footer__top {
+  border-bottom: 1px solid whitesmoke;
+}
+
+.top__row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0 40px 0;
+}
+.top__menu {
 
 }
-.footer__container {}
-.footer__row {
-  display: flex;
-  height: 65px;
-  justify-content: center;
-  align-items: center;
-}
-.footer__text {
+.top__menu a {
   color: whitesmoke;
+}
+.top__address {
+}
+.top__contacts {
+}
+.footer__bottom {
+}
+.bottom__row {
+  display: flex;
+  
+  
+  
+}
+.bottom__copyright {
+  flex: 1 1 600px;
+}
+.bottom__icons {
+  flex: 0 0 50px;
 }
 
 /*-----------------UPCOMMING EVENTS------------------*/
