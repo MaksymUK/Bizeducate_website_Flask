@@ -479,28 +479,37 @@ h1, h2, h3, h4, h5, h6 {
 /*------------------------AREAS OF SEMIMNARS------------------*/
 
 .areas {
-  padding: 60px 0;
   background-color: rgb(238, 230, 230);
 }
 .areas__title {
-  padding: 40px 0 20px 0;
 }
-.areas__row {
-  padding: 40px 0 20px 0;
+.areas__body {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  margin: 0 -15px;
+  justify-content: center;
+}
+.areas__column {
+  padding: 0 15px;
+  flex: 0 1 33.333%;
 }
 .areas__element {
-  margin: 10px;
-  max-width: 200px;
-  height: 150px;
-  border: 3px solid grey;
+  box-shadow: 0 13px 19px (black);
+  background-color: white;
   border-radius: 10px;
-  flex: 0 0 33.333%;
+  padding: 35px;
 }
-.areas__content {
+.element-area {
+  margin: 15px 0;
+}
+.element-area__icon {
+  filter: grayscale(100%);
+}
+.element-area__title {
   color: black;
+  font-size: 18px;
+  font-weight: 500px;
+  line-height: 24px;
+
 }
 
