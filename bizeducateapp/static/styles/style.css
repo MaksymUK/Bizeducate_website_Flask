@@ -480,36 +480,52 @@ h1, h2, h3, h4, h5, h6 {
 
 .areas {
   background-color: rgb(238, 230, 230);
+  padding: 60px 15px;
 }
 .areas__title {
+  padding: 0 0 20px 0;
 }
 .areas__body {
+  padding: 40px 0 20px 0;
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
   justify-content: center;
+  text-align: center;
 }
 .areas__column {
   padding: 0 15px;
-  flex: 0 1 33.333%;
+  flex: 0 1 25%;
 }
 .areas__element {
-  box-shadow: 0 13px 19px (black);
+  filter: drop-shadow(0 0 0.40rem rgb(141, 137, 137));
   background-color: white;
   border-radius: 10px;
-  padding: 35px;
+  padding: 30px;
+}
+.areas__element:hover {
+  background-color: red;
+  transition: 30ms;
 }
 .element-area {
   margin: 15px 0;
+  min-height: 170px;
+  min-width: 250px;
 }
 .element-area__icon {
   filter: grayscale(100%);
+  margin: 0 0 15px 0;
+}
+.element-area__icon img {
+  max-width: 40px;
+  max-height: 40px;
 }
 .element-area__title {
-  color: black;
   font-size: 18px;
-  font-weight: 500px;
+  font-weight: 800px;
   line-height: 24px;
-
+}
+.element-area__title a {
+  color: black;
 }
 
