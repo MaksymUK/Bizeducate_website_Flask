@@ -139,7 +139,11 @@ h1, h2, h3, h4, h5, h6 {
 .header__list li {
   list-style: none;
   margin: 0 0 0 20px;
-
+  padding: 15px 0;
+}
+.header__list li:hover {
+  border-bottom: 1px solid red;
+  transition: 30ms;
 }
 .header__link {
   color: white;
@@ -322,12 +326,12 @@ h1, h2, h3, h4, h5, h6 {
 /*-----------------UPCOMMING EVENTS------------------*/
 
 .upcomming-events {
-  padding: 50px 0;
+  padding: 60px 0;
   background-color: rgb(238, 230, 230);
 }
 .upcomming-events__title {
   margin: 0 0 30px 0;
-  padding-bottom: 20px;
+  padding: 30px 0;
 }
 .title {
   font-size: 36px;
@@ -341,6 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 .upcomming-events__body {
   max-width: 990px;
   margin: 0 auto;
+  padding: 0 0 20px 0;
 }
 .upcomming-events__row {
   padding: 0 -15px;
@@ -398,6 +403,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   vertical-align: middle;
   border: 2px solid red;
+  border-radius: 5px;
   font-size: 18px;
 }
 .item-upcomming-events__buttom:hover {
@@ -407,11 +413,29 @@ h1, h2, h3, h4, h5, h6 {
 .item-upcomming-events__buttom a {
   color: black;
 }
+.upcomming-events__buttom {
+  padding: 60px 0 0 0;
+}
+.buttom-calendar__body {
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  max-width: 200px;
+  text-align: center;
+  background-color: red;
+}
+.buttom-calendar__body:hover {
+  background-color: white;
+}
+.buttom-calendar__text a {
+  color: black;
+}
 
 /*-------------------WELCOME-------------------------*/
 
 .welcome {
-  padding: 30px 0 0 0;
+  padding: 60px 0 60px 0;
   align-items: center;
   border-bottom: 1px solid grey;
 }
@@ -450,18 +474,41 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
 }
 .welcome__subtitle {
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+  padding: 40px 0;
 }
 .welcome__numbers {
+  padding: 20px 0;
 }
 .numbers-welcome {
 }
 .numbers__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -20px;
+}
+.numbers__column {
+  flex: 0 1 20%;
+  padding: 0 20px;
 }
 .numbers__element {
+  text-align: center;
+
 }
 .numbers__digit {
+  color: red;
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 600;
+  padding: 0 0 15px 0;
+
 }
 .numbers__text {
+  font-size: 20px;
+  line-height: 120%;
 }
 
 /*--------------------CLIENTS-----------------------------------*/
@@ -497,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 60px 15px;
 }
 .areas__title {
-  padding: 0 0 20px 0;
+  padding: 30px 0 20px 0;
 }
 .areas__body {
   padding: 40px 0 20px 0;
@@ -541,5 +588,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 .element-area__title a {
   color: black;
+}
+
+/*----------------------------SERVICES-------------------------*/
+
+.services {
+  padding: 60px 0;
+}
+.services__body {
+}
+.services__row {
+  display: flex;
+  margin: 0 -15px;
+}
+.services__column {
+  margin: 0 auto;
+  padding: 0 15px;
+  flex: 0 1 33.333%;
+  
+ 
+}
+.service-item {
+  text-align: center;
+}
+.service-item__circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid red;
+  background-color: rgb(238, 230, 230);
+}
+.service-item__icon {
+  padding: 100px 0 0 0;
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.service-item__title {
+  text-align: center;
+}
+.service-item__text {
+  text-align: center;
+  
 }
 
