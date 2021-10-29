@@ -449,6 +449,20 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   object-fit: cover;
 }
+.welcome__subtitle {
+}
+.welcome__numbers {
+}
+.numbers-welcome {
+}
+.numbers__row {
+}
+.numbers__element {
+}
+.numbers__digit {
+}
+.numbers__text {
+}
 
 /*--------------------CLIENTS-----------------------------------*/
 
