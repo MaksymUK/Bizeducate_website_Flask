@@ -8,7 +8,7 @@ from flask_mail import Message, Mail
 @app.route('/')
 @app.route('/home')
 def index():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/login',methods = ['GET','POST'])
 def login():

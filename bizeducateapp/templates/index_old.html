@@ -1,6 +1,48 @@
-{% extends 'base.html' %}
-
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+	<link rel="stylesheet" href="/bizeducateapp/static/styles/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<a href="#" class="header__logo">
+						<img src="/bizeducateapp/static/logo_transparent_white.png" alt="logo">
+					</a>
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li>
+								<a href="" class="header__link">Главная</a>
+							</li>
+							<li>
+								<a href="" class="header__link">О компании</a>
+							</li>
+							<li>
+								<a href="" class="header__link">Календарь событий</a>
+							</li>
+							<li>
+								<a href="" class="header__link">Блог</a>
+							</li>
+							<li>
+								<a href="" class="header__link">Отзывы</a>
+							</li>
+							<li>
+								<a href="" class="header__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="content">
 			<section class="main-screen">
 				<div class="container">
 					<div class="main-screen__body">
@@ -9,7 +51,7 @@
 					</div>
 				</div>
 				<div class="main-screen__image _ibg">
-					<img src="/static/training.jpg" alt="cover">
+					<img src="/bizeducateapp/static/training.jpg" alt="cover">
 				</div>
 			</section>
 			<div class="services">
@@ -19,7 +61,7 @@
 							<div class="services__column service-item">
 								<div class="service-item__circle">
 									<div class="service-item__icon">
-										<img src="/static/icons/scheduled_training.png" alt="scheduled_training">
+										<img src="/bizeducateapp/static/icons/scheduled_training.png" alt="scheduled_training">
 									</div>
 								</div>
 								<div class="service-item__title">Плановые семинары</div>
@@ -28,7 +70,7 @@
 							<div class="services__column service-item">
 								<div class="service-item__circle">
 									<div class="service-item__icon">
-										<img src="/static/icons/bespoke_training.png" alt="bespoke_training">
+										<img src="/bizeducateapp/static/icons/bespoke_training.png" alt="bespoke_training">
 									</div>
 								</div>
 								<div class="service-item__title">Корпоративные мероприятия</div>
@@ -37,7 +79,7 @@
 							<div class="services__column service-item">
 								<div class="service-item__circle">
 									<div class="service-item__icon">
-										<img src="/static/icons/online_training.png" alt="online_training">
+										<img src="/bizeducateapp/static/icons/online_training.png" alt="online_training">
 									</div>
 								</div>
 								<div class="service-item__title">Онлайн тренинги</div>
@@ -55,8 +97,8 @@
 							<div class="upcomming-events__column">
 								<div class="item-upcomming-events">
 									<div class="item-upcomming-events__picture">
-										<img src="/static/amsterdam3.jpg" alt="">
-									</div>
+										<img src="/bizeducateapp/static/amsterdam3.jpg" alt="">
+									</div>	
 									<div class="item-upcomming-events__title">Стратегическое планирование закупочной деятельности
 									</div>
 									<div class="item-upcomming-events__venue">Вена, 5 - 8 июля 2020
@@ -72,7 +114,7 @@
 							<div class="upcomming-events__column">
 								<div class="item-upcomming-events">
 									<div class="item-upcomming-events__picture">
-										<img src="/static/PRAGUE_06.jpg" alt="">
+										<img src="/bizeducateapp/static/PRAGUE_06.jpg" alt="">
 									</div>
 									<div class="item-upcomming-events__title">Стратегический маркетинг. Позиционирование на международных рынках. Перспективы экспортного кредитования
 									</div>
@@ -88,7 +130,7 @@
 							<div class="upcomming-events__column">
 								<div class="item-upcomming-events">
 									<div class="item-upcomming-events__picture">
-										<img src="/static/Vienna.jpg" alt="">
+										<img src="/bizeducateapp/static/Vienna.jpg" alt="">
 									</div>
 									<div class="item-upcomming-events__title">Английское контрактное право. Практические аспекты
 									</div>
@@ -122,7 +164,7 @@
 							<div class="welcome__signature">Максим Андрейцив<br>Генеральный директор<br>Компания « BizEducate »</div>
 						</div>
 						<div class="welcome__image">
-							<img src="/static/maksym.jpg" alt="Director">
+							<img src="/bizeducateapp/static/maksym.jpg" alt="Director">
 						</div>
 					</div>
 					<div class="welcome__subtitle">Информация в цифрах</div>
@@ -169,7 +211,7 @@
 						<div class="areas__column">
 							<div class="areas__element element-area">
 								<div class="element-area__icon">
-									<img src="/static/icons/corporate-64.png" alt="corporate">
+									<img src="/bizeducateapp/static/icons/corporate-64.png" alt="corporate">
 								</div>
 								<div class="element-area__title">
 									<a href="#">Корпоративное управление</a>
@@ -179,7 +221,7 @@
 						<div class="areas__column">
 							<div class="areas__element element-area">
 								<div class="element-area__icon">
-									<img src="/static/icons/financial-growth-100.png" alt="finance">
+									<img src="/bizeducateapp/static/icons/financial-growth-100.png" alt="finance">
 								</div>
 								<div class="element-area__title">
 									<a href="#">Финансы</a>
@@ -189,7 +231,7 @@
 						<div class="areas__column">
 							<div class="areas__element element-area">
 								<div class="element-area__icon">
-									<img src="/static/icons/legal.png" alt="legal">
+									<img src="/bizeducateapp/static/icons/legal.png" alt="legal">
 								</div>
 								<div class="element-area__title">
 									<a href="#">Юриспруденция</a>
@@ -199,7 +241,7 @@
 						<div class="areas__column">
 							<div class="areas__element element-area">
 								<div class="element-area__icon">
-									<img src="/static/icons/inspection-50.png" alt="compliance">
+									<img src="/bizeducateapp/static/icons/inspection-50.png" alt="compliance">
 								</div>
 								<div class="element-area__title">
 									<a href="#">Комплаенс</a>
@@ -209,7 +251,7 @@
 						<div class="areas__column">
 							<div class="areas__element element-area">
 								<div class="element-area__icon">
-									<img src="/static/icons/high-risk-100.png" alt="risk_management">
+									<img src="/bizeducateapp/static/icons/high-risk-100.png" alt="risk_management">
 								</div>
 								<div class="element-area__title">
 									<a href="#">Риск-менеджмент</a>
@@ -219,7 +261,7 @@
 						<div class="areas__column">
 							<div class="areas__element element-area">
 								<div class="element-area__icon">
-									<img src="/static/icons/hr.png" alt="human_resources">
+									<img src="/bizeducateapp/static/icons/hr.png" alt="human_resources">
 								</div>
 								<div class="element-area__title">
 									<a href="#">HR</a>
@@ -229,7 +271,7 @@
 						<div class="areas__column">
 							<div class="areas__element element-area">
 								<div class="element-area__icon">
-									<img src="/static/icons/procurement-100.png" alt="procurement">
+									<img src="/bizeducateapp/static/icons/procurement-100.png" alt="procurement">
 								</div>
 								<div class="element-area__title">
 									<a href="#">Закупки</a>
@@ -239,7 +281,7 @@
 						<div class="areas__column">
 							<div class="areas__element element-area">
 								<div class="element-area__icon">
-									<img src="/static/icons/construction-128.png" alt="construction">
+									<img src="/bizeducateapp/static/icons/construction-128.png" alt="construction">
 								</div>
 								<div class="element-area__title">
 									<a href="#">Строительные проекты</a>
@@ -254,36 +296,73 @@
 					<div class="clients__title title">Наши семинары посетили:</div>
 					<div class="clients__row">
 						<div class="clients__item">
-							<img src="/static/clients logo/ferrexpo.png" alt="ferrexpo">
+							<img src="/bizeducateapp/static/clients logo/ferrexpo.png" alt="ferrexpo">
 						</div>
 						<div class="clients__item">
-							<img src="/static/clients logo/gazprom_neft.png" alt="gazprom_neft">
+							<img src="/bizeducateapp/static/clients logo/gazprom_neft.png" alt="gazprom_neft">
 						</div>
 						<div class="clients__item">
-							<img src="/static/clients logo/interpipe.jpg" alt="interpipe">
+							<img src="/bizeducateapp/static/clients logo/interpipe.jpg" alt="interpipe">
 						</div>
 						<div class="clients__item">
-							<img src="/static/clients logo/karachaganak.png" alt="karachaganak">
+							<img src="/bizeducateapp/static/clients logo/karachaganak.png" alt="karachaganak">
 						</div>
 						<div class="clients__item">
-							<img src="/static/clients logo/kazchrome.jpg" alt="kazchrome">
+							<img src="/bizeducateapp/static/clients logo/kazchrome.jpg" alt="kazchrome">
 						</div>
 						<div class="clients__item">
-							<img src="/static/clients logo/kmg.png" alt="KMG">
+							<img src="/bizeducateapp/static/clients logo/kmg.png" alt="KMG">
 						</div>
 						<div class="clients__item">
-							<img src="/static/clients logo/Ministry_of_Energy_and_Coal_Mining_of_Ukraine.svg.png"
+							<img src="/bizeducateapp/static/clients logo/Ministry_of_Energy_and_Coal_Mining_of_Ukraine.svg.png"
 								alt="Ministry_of_Energy">
 						</div>
 						<div class="clients__item">
-							<img src="/static/clients logo/nazarbayev_university.png" alt="nazarbayev_university">
+							<img src="/bizeducateapp/static/clients logo/nazarbayev_university.png" alt="nazarbayev_university">
 						</div>
 						<div class="clients__item">
-							<img src="/static/clients logo/socar.png" alt="socar">
+							<img src="/bizeducateapp/static/clients logo/socar.png" alt="socar">
 						</div>
 					</div>
 				</div>
 			</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="top__row">
+						<div class="top__menu">
+							<a href="#">Документы</a><br>
+							<a href="#">Политика конфиденциальности</a><br>
+							<a href="#">Отзывы</a>
+						</div>
+						<div class="top__address">
+							АДРЕС<br> 1417
+							Kemp House<br>
+							152-160 City Road<br>
+							London EC1V 2NX<br>
+							United Kingdom
+						</div>
+						<div class="top__contacts">
+							Tel: +44 20 3695 3407 (London)<br>
+							Tel: +7 7172 695 933 (Nur-Sultan)<br>
+							E-mail: office@bizeducate.com<br>
+							Skype: bizeducate.com
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="bottom__row">
+						<div class="bottom__copyright">Copyright © 2008 - 2021 Bizeducate</div>
+						<div class="bottom__icons">
+							<img src="/bizeducateapp/static/logo_transparent_white.png" alt="logo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-{% endblock %}
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/bizeducateapp/static/styles/script.js"></script>
+</body>
+</html>
