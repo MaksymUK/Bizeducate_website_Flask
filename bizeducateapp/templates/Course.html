@@ -1,8 +1,23 @@
-{% extends 'base.html' %}
-
-{% block content %}
-{{ paragraph }}
-<br>
-{{ venue }}
-
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}" type="css/text">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="course">
+            <div class="container">
+                <div class="course__header">
+                    <h1 class="header-course__title">Передовые практики корпоративного правления</div>
+                    <div class="header-course__subtitle">Семинар состоится в Лондоне 20 - 27 января 2022</div>
+                </div>
+                <div class="course__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quisquam dicta odio? Atque totam repellat in assumenda quaerat cum alias veritatis adipisci. Placeat iste facere rerum deserunt neque eveniet repellendus?</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

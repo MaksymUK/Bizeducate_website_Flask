@@ -642,3 +642,19 @@ h1, h2, h3, h4, h5, h6 {
   color: grey;
 }
 
+/*---------------------SINGLE COURSE--------------------------*/
+
+
+.course {
+  background-color: royalblue;
+}
+.course__header {
+  font-size: 36px;
+  
+}
+.header-course__title {
+}
+.header-course__subtitle {
+}
+.course__description {
+}
