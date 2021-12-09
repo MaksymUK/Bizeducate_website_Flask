@@ -669,3 +669,69 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 120%;
   margin: 40px 0;
 }
+
+/*-------------------------ABOUT US PAGE ---------------------------*/
+
+.about-us {
+}
+
+.about-us__title {
+}
+.about-us__video {
+}
+.video__body {
+  display: flex;
+  justify-content: center;
+}
+.video__body iframe {
+  max-width: 800px;
+  flex: 0 1 auto;
+}
+.values {
+}
+.values__title {
+}
+.title {
+}
+.values__body {
+}
+.values__row {
+}
+.values__column {
+}
+.values__element {
+}
+.element-values__icon {
+}
+.element-values__text {
+}
+.mission {
+}
+.mission__title {
+}
+.mission__aim {
+}
+.aim__body {
+}
+.aim__text {
+}
+.aim__picture {
+}
+.mission__subtitle {
+}
+.mission__text {
+}
+.video-review {
+}
+.video-review__row {
+  display: flex;
+  justify-content: center;
+  margin: 0 -15px;
+  flex-wrap: wrap;
+}
+.video-review__column {
+  padding: 0 15px;
+  flex: 0 1 50%;
+}
+.video-review__item { 
+}

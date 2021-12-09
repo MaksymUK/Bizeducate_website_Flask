@@ -30,6 +30,10 @@ def logout():
 def single_course():
     return render_template('course.html')
 
+@app.route('/finances')
+def finance():
+    return render_template('finance.html')
+
 @app.route('/contact_us', methods = ['GET','POST'])
 def contact_us():
     form = ContactUsForm()
