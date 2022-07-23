@@ -735,3 +735,101 @@ h1, h2, h3, h4, h5, h6 {
 }
 .video-review__item { 
 }
+
+/* ----------------------- CONTACT US PAGE --------------------------- */ 
+
+.head-banner {
+  background-image: url('../amsterdam3.jpg');
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.head-banner__box {
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent); 
+
+}
+.head-banner__title {
+  font-size: 40px;
+  color: whitesmoke;
+  font-weight: 500;
+  padding: 60px 0 0 0;
+}
+.head-banner__address {
+  font-size: 20px;
+  color: whitesmoke;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.contact-us__body {
+}
+.contact-us__text {
+  margin: 0px auto;
+  width: 75%;
+  font-size: 20px;
+  text-align: center;
+  padding: 50px 0px;
+  line-height: 30px;
+  border-bottom: solid grey 1px;
+  
+}
+.contact-us__form {
+  max-width: 550px;
+  margin: 0px auto;
+  padding: 30px 15px;
+}
+.form__body {
+}
+.form__item {
+  margin: 0px 0px 20px 0px;
+}
+.form__label {
+  font-size: 18px;
+  display: block;
+  margin: 0px 0px 10px 0px;
+}
+.form__input {
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  width: 100%;
+  border: solid 1px grey;
+  font-size: 18px;
+}
+textarea.form__input {
+  min-height: 120px;
+  resize: vertical;
+  padding: 20px;
+}
+.form__checkbox {
+}
+.checkbox__input {
+}
+.checkbox__label {
+}
+.form__button {
+  margin: 0px auto;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  background-color: grey;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease 0s;
+}
+.form__button:hover {
+  background-color: rgb(77, 73, 73); 
+}

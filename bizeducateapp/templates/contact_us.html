@@ -1,49 +1,62 @@
-{% extends 'base.html' %}
-
-{% block content %}
-
-<br/>
-<br>
-<br>
-
-<div class="container">
-  <div class="row">
-    <div class="row">
-      <h3 class="row justify-content-center">Заполните форму ниже, и мы ответим Вам в течение часа:</h3><br>
-      <br>
-      <br>
-
-      <form class="form-group" method="POST" enctype="multipart/form-data">
-         {{ form.hidden_tag() }}
-
-         <div class="form-group">
-         {{ form.name.label(class="form-control-label") }}
-         {{ form.name(class="form-control form-control-lg ") }}
-         </div>
-          <div class="form-group">
-         {{ form.surname.label(class="form-control-label") }}
-         {{ form.surname(class="form-control form-control-lg ") }}
-         </div>
-          <div class="form-group">
-         {{ form.company.label(class="form-control-label") }}
-         {{ form.company(class="form-control form-control-lg ") }}
-         </div>
-          <div class="form-group">
-         {{ form.email.label(class="form-control-label") }}
-         {{ form.email(class="form-control form-control-lg ") }}
-         </div>
-         <div class="form-group">
-         {{ form.text.label(class="form-control-label") }}
-         {{ form.text(class="form-control form-control-lg") }}
-         </div>
-          <br>
-         <div class="form-group">
-             {{ form.submit(class="btn btn-outline-info") }}
-         </div>
-      </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../static/styles/style.css">
+</head>
+<body>
+  <div class="head-banner">
+    <div class="head-banner__box">
+      <div class="container">
+        <div class="head-banner__title">Contact Us</div>
+        <div class="head-banner__address">
+          <ul>
+            <li>Address: 160 City Road, London, EC1V 2NX, United kingdom</li>
+            <li>Tel. 020 6633 9876</li>
+            <li>E-mail: office@bizeducate.com</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-
-</div>
-
-{% endblock %}
+  <div class="contact-us__body">
+    <div class="container">
+      <div class="contact-us__text">We're excited to learn more about your training and travel requirements!<hr/> The more information we have, the deeper we can dive on our initial conversation.</div>
+      <div class="contact-us__form">
+        <form action="#" id="form" class="form__body">
+          <div class="form__item">
+            <label for="formName" class="form__label">Name *</label>
+            <input type="text" id="formName" name="name" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="formCompany" class="form__label">Company *</label>
+            <input type="text" id="formCompany" name="company" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="formEmail" class="form__label">Email *</label>
+            <input type="email" id="formEmail" name="email" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="formPhone" class="form__label">Phone number</label>
+            <input type="tel" id="formPhone" name="phone" class="form__input">
+          </div>
+          <div class="form__item">
+            <label for="formMessage" class="form__label">Message</label>
+            <textarea name="textmessage" id="formMessage" class="form__input" placeholder="Type your message"></textarea>
+          </div>
+          <div class="form__item">
+            <div class="form__checkbox">
+              <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input">
+              <label for="formAgreement" class="checkbox__label"><span>I agree that after submition of this form my personal details will be processed.</span></label>
+            </div>
+          </div>
+          <button type="submit" class="form__button">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
