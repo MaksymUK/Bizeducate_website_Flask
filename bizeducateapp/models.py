@@ -41,9 +41,9 @@ class Courses (db.Model):
 
 class SingleCourse (db.Model):
     __tablename__ = 'singlecourse'
-    id = db.Column(db.Integer,primary_key = True)
-    paragraph = db.Column(db.String,db.ForeignKey('courses.title'), nullable = False)
-    venue = db.Column(db.String,db.ForeignKey('courses.country'), nullable= False)
+    id = db.Column(db.Integer, primary_key = True)
+    paragraph = db.Column(db.String, db.ForeignKey('courses.title'), nullable = False)
+    venue = db.Column(db.String,db.ForeignKey('courses.country'), nullable=False)
     dates = db.Column(db.DateTime,db.ForeignKey('courses.date'),nullable = False)
     description = db.Column(db.Text)
     trainer = db.Column(db.Text)
